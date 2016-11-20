@@ -1,0 +1,8 @@
+<div class="container">
+  <br>
+  <div class="row">
+    <% @posts.each do |post| %>
+      <%= render 'post', post: post %>
+    <% end %>
+  </div>
+</div>
