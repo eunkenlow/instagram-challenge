@@ -1,11 +1,19 @@
 Rails.application.routes.draw do
+  get 'profiles/show'
+
   devise_for :users, :controllers => { registrations: 'registrations' }
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   resources :posts do
     resources :comments
+    member do
+      get 'like'
+      get 'unlike'
+    end
   end
+
+  get ':user_name', to: 'profiles#show', as: :profile
   # You can have the root of your site routed with "root"
   root 'posts#index'
 

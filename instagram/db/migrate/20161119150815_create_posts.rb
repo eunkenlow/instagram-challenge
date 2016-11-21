@@ -3,7 +3,6 @@ class CreatePosts < ActiveRecord::Migration
     create_table :posts do |t|
       t.string :caption
       t.string :location
-      t.integer :likes
 
       t.timestamps null: false
     end

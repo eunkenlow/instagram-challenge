@@ -21,6 +21,13 @@ body {
   font-family: proxima-nova, 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
+.likes a{
+  color:#242526;
+  font-weight:600;
+  text-decoration: none;
+  outline: none
+}
+
 .thumbnail{
     width: 640px; // or you could use percentage value for responsive layout
     height: auto;
@@ -28,7 +35,23 @@ body {
 }
 
 .time{
-  color: grey
+  color: grey;
+  padding-right: 2%;
+}
+
+.likes{
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.user_name {
+  padding-left: 2%;
+}
+
+.user_name a{
+  color:#242526;
+  text-decoration: none;
+  outline:none
 }
 
 /* ## NAVBAR CUSTOMISATIONS ## */
@@ -36,6 +59,7 @@ body {
 .navbar-brand {
   a {
     color: #125688;
+    text-decoration: none;
   }
 }
 
@@ -48,11 +72,14 @@ body {
 }
 
 .navbar-container {
-  width: 70%;
+  width: 98%;
   margin: 0 auto;
 }
 
-
+.comments {
+  line-height: 25px;
+  padding-top: 1%
+}
 
   #comment {
     margin-top: 7px;
@@ -91,6 +118,20 @@ select:focus,
 textarea:focus,
 button:focus {
     outline: none;
+}
+
+.like {
+  text-decoration: none;
+  color: #f44268;
+}
+
+.like-button a:hover, a:focus {
+  text-decoration: none;
+  color: #f44268;
+}
+
+.like-button a{
+  color: #f44268;
 }
 
 /* ## Wrapper and styling for the new and edit views ## */
